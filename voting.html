@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>Simple Voting DApp</title>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body class="container">
+    <h1>A Simple Voting Application</h1>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Candidate</th>
+                    <th>Votes</th>
+                </tr>
+            </thead>
+            <tbody id="table-body"> </tbody>
+        </table>
+    </div>
+    <div style="font-size: 22px; color: red; margin-bottom: 12px;" id="winner-name"></div>
+    <form id="vote-form">
+        <select id="candidate-options" name="candidate"></select> <button type="submit"
+            class="btn btn-primary" onsubmit=false>Vote</button>
+    </form>
+</body>
+<script src="./node_modules/web3/dist/web3.min.js"></script>
+<script src="./voting.js"></script>
+
+</html>
